@@ -1,0 +1,276 @@
+body{
+ 
+  padding: 0;
+  margin: 0;
+  background-color: rgb(209, 209, 214);
+}
+.main{
+  width: 100%;
+  height: 100%;
+}
+#menuList{
+
+  background-color: rgb(81, 81, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  height: 50px;
+}
+
+#menuList ul{
+  display: flex;
+}
+
+#menuList li{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#menuList li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+#menuList li a:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.home{ 
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  background-color: rgb(0, 0, 0 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.home::before{
+  background: url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80")
+      no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+h1{
+  font-size: 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+
+h2{
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px;
+}
+.about{ 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 40px;
+    
+}
+
+.pic{
+  display: flex;
+  
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 15px;
+ }
+
+ .intro h2{
+  font-size: 50px; 
+  margin-bottom: 25px;
+ }
+ .intro p{
+  font-size: 25px; 
+ }
+
+.pic img{
+  width: 550px;
+  height: 500px; 
+  border: 5px solid black;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+
+}
+
+.skills ul{
+    padding: 10px;
+    border: 2px solid rgb(68, 67, 73);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 400px;
+    width: 90%;
+    
+}
+
+.skills ul li{
+  margin: 30px;
+  height: 100px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  
+}
+
+.skills ul li a{
+  text-decoration: none;
+  color: rgb(10, 9, 9);
+  padding: 10px;
+  border: 2px solid gray;
+  box-sizing: 160px 55px;
+}
+.skills li a:hover{
+  background-color: rgb(93, 51, 218);
+  color: rgb(246, 241, 241);
+  box-shadow: 0 0 10px rgb(13, 12, 14);
+}
+
+.items{
+    padding-top:50px;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-template-columns:3fr 3fr ;
+    grid-template-rows: 3fr 3fr ;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;  
+} 
+.item-1{
+    color: rgb(16, 15, 15);
+    justify-self: center;
+    border: 4px solid black;
+    width: 400px; 
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+
+
+.item-2{
+    color: rgb(23, 21, 21);
+    text-align: center;
+    border: 4px solid black;
+    width: 400px; 
+    height: 450px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    
+}
+    
+
+
+
+.resume{
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+}
+
+.contact{
+    width: 100%;
+    height: 700px;
+     display: flex;
+     flex-direction: row;
+}
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form {
+  margin: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 550px;
+  height: 530px;
+  
+  align-self: top;
+  justify-self: left;
+}
+ .map{
+  margin: 30px;
+ }
+
+
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  
+footer{
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  color:   black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+footer h3{
+  margin: 10px;
+  font-size: 30px;
+}
